@@ -92,22 +92,40 @@
 	
 		<i class="iconfont icon-words"></i>
 		<span>
-			840
+			838
 		</span>
 	
 </div>
 
 </div> 
-	 
+	
+    <script type="text/x-mathjax-config">
+        var post = document.getElementsByClassName("post")[0];  
+        MathJax.Hub.Config({
+            showProcessingMessages: false,
+            messageStyle: "none",    
+            tex2jax: {
+                inlineMath:  [ ["$", "$"] , ["\\(","\\)"]],
+                displayMath: [ ["$$","$$"] , ["\\[","\\]"]],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+            },
+            "HTML-CSS": {            
+                showMathMenu: false
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub,post]);
+    </script>
+    <style>.MathJax{outline:0;}</style>
+
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.2/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+ 
 
 	  <div class="typo post-content slideDownMin">
 
 		
 
 			
-					<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<h4 id="为什么要用Markdown"><a href="#为什么要用Markdown" class="headerlink" title="为什么要用Markdown?"></a>为什么要用Markdown?</h4><ul>
+					<h4 id="为什么要用Markdown"><a href="#为什么要用Markdown" class="headerlink" title="为什么要用Markdown?"></a>为什么要用Markdown?</h4><ul>
 <li><p>文章的排版很麻烦，如果有一种对于文章排版的解决方案就好了。</p>
 </li>
 <li><p>学习实践Markdown语法后你可以自定义你的文章排版。</p>
